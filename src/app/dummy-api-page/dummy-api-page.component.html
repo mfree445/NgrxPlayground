@@ -1,0 +1,6 @@
+<p>This is our Dummy API Page</p>
+<p><strong>Current State Status:</strong> {{ reducerCurrentState | async }}</p>
+
+<div *ngFor="let item of posts$ | async">
+  {{ item.title }}
+</div>

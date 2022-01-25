@@ -1,0 +1,24 @@
+<mat-toolbar>    
+        NGRX Playground
+</mat-toolbar>
+
+<mat-drawer-container class="drawer-container" autosize>
+    <mat-drawer #drawer class="sidenav-padding" mode="side" opened="true"> 
+      <mat-nav-list>
+          <a mat-list-item [routerLink]="['/basic-counter']">
+              Basic Counter
+          </a>
+          <a mat-list-item [routerLink]="['/secondary-page']">
+            Secondary Page
+        </a>
+        <a mat-list-item [routerLink]="['/dummy-api-page']">
+          Dummy API Page
+      </a>
+      </mat-nav-list>
+            
+    </mat-drawer>
+  
+    <div class="sidenav-content">
+        <router-outlet></router-outlet>      
+    </div>  
+  </mat-drawer-container>
